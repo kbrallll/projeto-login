@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #014040;
+    --cor1: #02735E;
+    --cor2: #03A678;
+    --cor3: #F27405;
+    --cor4: #731702;
+    --fonte0: Arial, Helvetica, sans-serif;
+}
+
+/*Todas as Demais Mídias*/
+
+/*  
+        Typical Device Breakpoints
+
+Pequenas Telas: até 600px
+Celular: 600px até 768px;
+Tablet: 768px até 992px;
+Desktop: 992px até 1200px;
+Grandes Telas: acima de 1200px;
+
+
+        Essa configuração eu ignoro pq eu ja fiz a minha versão para dispositivo móvel no style css
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+*/
+
+/*Impressão*/
+@media print { 
+
+}
+
+/*Mídia Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+/*Mídia Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+/*Mídia Grandes Telas*/
+@media screen and (min-width: 1200px) {
+    
+}
