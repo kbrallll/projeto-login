@@ -9,6 +9,9 @@
     --fonte0: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--cor0);
+}
 
 
 
