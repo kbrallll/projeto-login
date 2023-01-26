@@ -7,12 +7,61 @@
     --cor3: #F27405;
     --cor4: #731702;
     --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
+* {
+    font-family: var(--fonte1);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Na parte <html> e <body>, fizemos de modo que preencham toda a tela do dispositivo em largura e altura.
+Por semântica, utilizamos o <main> para depois centralizar a <section> na página.*/
+body, html {
     background-color: var(--cor0);
+    height: 100vh;
+    width: 100vw;
 }
 
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
 
+/*O <main> deverá ter sua posição relativa e ocupar toda a tela. Dessa forma podemos posicionar a <section> no meio, fazendo algumas especifica-ções:*/
 
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #03A678;
+    transform: translate(-50%, -50%);
+    height: 515px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease; 
+    overflow: hidden;
+    /*Especificamos overflow: hidden; (tente remove-lo) para esconder a imagem dentro da <section> de bordas arredondadas.
+Na parte de efeitos, adicionamos sombra e uma transição suave entre as variações de tamanho.*/
+
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url("../imagens/foto-ex.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
 
