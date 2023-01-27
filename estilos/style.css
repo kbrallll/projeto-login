@@ -110,6 +110,10 @@ div.campo > input {
     color: var(--cor5);
 }
 
+::-webkit-input-placeholder {
+    color: var(--cor5);
+}
+
 div.campo > input:focus-within {
      background-color: var(--cor5);
      border: none;
